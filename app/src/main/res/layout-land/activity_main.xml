@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+  <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <ImageView
+        android:id="@+id/soccer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:foreground="@drawable/football"
+
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_a_team"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/soccer"
+        android:textColorHint="#000000" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleTeam"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+</RelativeLayout>

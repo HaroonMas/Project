@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".addMatchFrag">
+
+    <TextView
+        android:id="@+id/teamView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_name"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/teamName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:textSize="12sp"
+        android:hint="@string/team_name" />
+
+
+
+    <TextView
+        android:id="@+id/ownerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/teamView"/>
+
+
+    <EditText
+        android:id="@+id/ownerName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:textSize="12sp"
+        android:hint="@string/michael"
+        android:layout_below="@+id/teamName"/>
+
+    <TextView
+        android:id="@+id/againstView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opponent_team"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ownerView"/>
+
+
+    <EditText
+        android:id="@+id/againstName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:textSize="12sp"
+        android:hint="@string/manchester_city"
+        android:layout_below="@+id/ownerName"/>
+    <TextView
+        android:id="@+id/locationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/againstView"/>
+
+    <EditText
+        android:id="@+id/locationName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:textSize="12sp"
+        android:hint="@string/brossard_park"
+        android:layout_below="@+id/againstName"/>
+
+    <TextView
+        android:id="@+id/leagueView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="League:"
+        android:layout_below="@+id/locationView"
+        android:textSize="15sp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/league_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationName"
+        android:layout_marginStart="120dp"
+        />
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="350dp"
+
+        />
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/leagueView"/>
+
+    <EditText
+        android:id="@+id/timeName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:textSize="12dp"
+        android:hint="@string/_2_00_pm"
+        android:layout_below="@+id/league_spinner"/>
+    <Button
+        android:id="@+id/submitBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@+id/timeView"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+</RelativeLayout>
